@@ -1,0 +1,33 @@
+{
+  "name": "typeorm-migrate-to-sql",
+  "version": "1.0.0",
+  "description": "general typeorm migrate to sql file",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "cross-env SERVER_NODE_ENV=development nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qbright/typeorm-migrate-to-sql.git"
+  },
+  "keywords": [
+    "typeorm",
+    "migrate",
+    "sql"
+  ],
+  "author": "zqbright",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/qbright/typeorm-migrate-to-sql/issues"
+  },
+  "homepage": "https://github.com/qbright/typeorm-migrate-to-sql#readme",
+  "devDependencies": {
+    "cross-env": "^6.0.3",
+    "nodemon": "^1.19.4",
+    "prettier": "^1.19.1",
+    "ts-node": "^8.5.0",
+    "tsconfig-paths": "^3.9.0",
+    "typescript": "^3.7.2"
+  }
+}

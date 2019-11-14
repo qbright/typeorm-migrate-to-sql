@@ -5,14 +5,14 @@
     "noImplicitAny": false,
     "removeComments": true,
     "noLib": false,
-    "allowSyntheticDefaultImports": true,
+    "lib": ["es2015", "esnext", "dom"],
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "target": "es6",
+    "target": "es5",
     "sourceMap": true,
     "outDir": "./dist",
-    "lib": ["es2015", "esnext", "dom"],
-    "baseUrl": "./src"
+    "rootDir": "src",
+    "esModuleInterop": true
   },
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", "./dist/**/*.ts"]
 }

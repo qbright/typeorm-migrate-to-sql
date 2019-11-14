@@ -16,7 +16,7 @@ export async function generalMigrateSql(
   sqlfiledir: string,
 ) {
   const spinner = ora({
-    text: chalk.bgGreen.black('typeorn migrate is generating...'),
+    text: chalk.bgGreen.black('typeorn migrate is generating...\n'),
     color: 'green',
   }).start();
   const typeormConfig = await importModule(

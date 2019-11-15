@@ -1,3 +1,6 @@
+#!/usr/bin/env node
+
+
 const { generalMigrateSql } = require('../dist/main');
 const args = require('args');
 

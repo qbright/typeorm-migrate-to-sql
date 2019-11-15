@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 
-
 const { generalMigrateSql } = require('../dist/main');
 const args = require('args');
 
@@ -9,13 +8,13 @@ args
   .option('config', 'the typeorm config')
   .option('dir', 'the dir of the sql to store');
 
-const flags = args.parse(process.argv);
+const { name, config, dir } = args.parse(process.argv);
 
-if (!flags.name) {
+if (!name) {
   throw new Error('name arg is required');
-} else if (!flags.config) {
+} else if (!config) {
   throw new Error('config arg is required');
-} else if (!flags.dir) {
+} else if (!dir) {
   throw new Error('dir arg is required');
 }
 

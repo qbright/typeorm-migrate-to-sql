@@ -1,6 +1,6 @@
 {
   "name": "typeorm-migrate-to-sql",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "general typeorm migrate to sql file",
   "main": "./dist/main.js",
   "scripts": {

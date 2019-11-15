@@ -1,7 +1,7 @@
 import {
   typeormMigrationGenerator,
   typeormMigrationParser,
-} from './typorm-migrate';
+} from './typeorm-migrate';
 import ora from 'ora';
 import chalk from 'chalk';
 import * as fs from 'fs';

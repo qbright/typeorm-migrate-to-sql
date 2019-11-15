@@ -1,6 +1,6 @@
 # typeorm-migrate-to-sql
 
-通过 typeorm 直接生成 sql 语句
+通过 typeorm 直接生成 sql 语句 , use typeorm to general sql file
 
 ## Usage
 
@@ -13,20 +13,21 @@
 `npx typeorm-sql -n migrateName -c typeormConfigPath -d sql general dir`
 
 ### api
-直接通过API 进行调用
 
-`(alias) function generalMigrateSql(migrateName: string, typeormConfigPath: string, sqlfiledir: string): Promise<void>
-`
+直接通过 API 进行调用
+
+`(alias) function generalMigrateSql(migrateName: string, typeormConfigPath: string, sqlfiledir: string): Promise<void>`
 
 eg:
-``````
+
+```
 import { generalMigrateSql } from 'typeorm-migrate-to-sql';
 generalMigrateSql(
   'testMigrate',
   './src/config/typeorm.config.ts',
   './migration-sql/',
 );
-``````
+```
 
 ## notice
 
@@ -40,4 +41,4 @@ generalMigrateSql(
 
    调用的时候只需要 `npm run migrate:general migrateName`
 
-3. **特别提醒** 生成的语句中只包含typeorm生成的`up`、`down` 语句，没有和migrate状态有关的信息sql，比如migrate表格信息插入等等
+3. **特别提醒** 生成的语句中只包含 typeorm 生成的`up`、`down` 语句，没有和 migrate 状态有关的信息 sql，比如 migrate 表格信息插入等等
